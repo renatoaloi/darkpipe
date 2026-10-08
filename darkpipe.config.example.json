@@ -1,0 +1,41 @@
+{
+  "casesDir": "cases",
+  "store": {
+    "adapter": "sqlite",
+    "file": "darkpipe.sqlite"
+  },
+  "files": {
+    "adapter": "casefs",
+    "casesDir": "cases"
+  },
+  "media": {
+    "adapter": "runware",
+    "modelStill": "bytedance:seedream@4.5",
+    "modelVideo": "bytedance:2@2",
+    "width": 1280,
+    "height": 720,
+    "seconds": 6
+  },
+  "speech": {
+    "adapter": "runware",
+    "model": "minimax:speech@2.8",
+    "voice": "English_ManWithDeepVoice"
+  },
+  "text": {
+    "adapter": "runware",
+    "model": "minimax-m3"
+  },
+  "render": {
+    "adapter": "ffmpeg",
+    "ffmpeg": "ffmpeg",
+    "ffprobe": "ffprobe"
+  },
+  "ledger": {
+    "adapter": "jsonl",
+    "file": "costs/events.jsonl"
+  },
+  "publisher": {
+    "adapter": "youtube",
+    "channel": ""
+  }
+}

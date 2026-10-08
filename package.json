@@ -1,0 +1,38 @@
+{
+  "name": "darkpipe",
+  "version": "0.1.0",
+  "description": "Faceless dark-channel pipeline: one English command for the whole production line.",
+  "license": "MIT",
+  "author": "Renato Aloi",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renatoaloi/darkpipe.git"
+  },
+  "bugs": {
+    "url": "https://github.com/renatoaloi/darkpipe/issues"
+  },
+  "homepage": "https://github.com/renatoaloi/darkpipe#readme",
+  "type": "module",
+  "bin": {
+    "darkpipe": "dist/cli.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "files": [
+    "dist",
+    "docs",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.test.json",
+    "test": "node --test test/*.test.ts",
+    "darkpipe": "node src/cli.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.2"
+  }
+}

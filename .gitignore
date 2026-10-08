@@ -1,0 +1,13 @@
+node_modules/
+dist/
+*.tgz
+.env
+.env.*
+!.env.example
+*.sqlite
+*.sqlite-journal
+.darkpipe/
+darkpipe.config.json
+npm_recovery_codes.txt
+.DS_Store
+Thumbs.db
